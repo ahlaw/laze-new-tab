@@ -73,6 +73,11 @@ const weatherWidget = (() => {
     return response;
   }
 
+  function handleError(error) {
+    console.warn('Could not get weather data');
+    fadePageIn();
+  }
+
   function showWeather(data) {
     let currentTemp = Math.round(data.main.temp);
     let description = data.weather[0].description;
@@ -97,7 +102,7 @@ const weatherWidget = (() => {
       .then(validateReponse)
       .then(resp => resp.json())
       .then(showWeather)
-      .catch(error => console.warn('Could not get weather data'));
+      .catch(handleError);
   }
 
   function geoSuccess(position) {
