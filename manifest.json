@@ -27,8 +27,7 @@
   "permissions": [
     "geolocation",
     "storage",
-    "http://api.openweathermap.org/*",
-    "*://*/*"
+    "http://api.openweathermap.org/*"
   ],
   "web_accessible_resources": [
     "assets/fonts/*"
