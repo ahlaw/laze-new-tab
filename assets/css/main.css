@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "Gotham-Bold";
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/GothamBold.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font: 2.5rem "Gotham-Bold", sans-serif;
+  color: #FFF;
+  transition: background-color 700ms linear;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* WIDGETS POSITIONING */
+.widgets {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 18%;
+}
+
+/* CLOCK */
+#clock {
+  font-size: 4em;
+}
+
+/* WEATHER */
+#weather-report {
+  text-transform: capitalize;
+}
+
+/* BUTTON */
+button {
+  font: inherit;
+  font-size: 0.8em;
+  color: inherit;
+  background-color: inherit;
+  border: solid 0.3rem #fff;
+  border-radius: 1rem;
+  padding: 0.5em;
+  position: absolute;
+  bottom: 18%;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:hover {
+  transition: -webkit-filter 150ms ease;
+  transition: filter 150ms ease;
+  -webkit-filter: brightness(92%);
+  filter: brightness(92%);
+}
+
+button:active {
+  -webkit-filter: brightness(85%);
+  filter: brightness(85%);
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 810px), screen and (max-height: 700px) {
+  html {
+    font-size: 0.7rem;
+  }
+
+  #clock {
+    font-size: 3.5em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 0.5rem;
+  }
+
+  #clock {
+    font-size: 3.5em;
+  }
+}
+
+@media screen and (max-height: 440px) {
+  button {
+    display: none;
+  }
+}

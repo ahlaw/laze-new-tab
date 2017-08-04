@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Laze Options</title>
+    <link rel="stylesheet" href="assets/css/options.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="col">
+        <h4>Time convention:</h4>
+      </div>
+      <form id="time" class="col">
+        <p><input type="radio" name="time" id="hour12" value="hour12">
+        <label for="hour12">12-Hour</label></p>
+        <p><input type="radio" name="time" id="hour24" value="hour24">
+        <label for="hour24">24-Hour</label></p>
+      </form>
+    </div>
+    <div class="container">
+      <div class="col">
+        <h4>Temperature Scale:</h4>
+      </div>
+      <form id="temp" class="col">
+        <p><input type="radio" name="temp" id="celcius" value="celcius">
+        <label for="celcius">Celcius</label></p>
+        <p><input type="radio" name="temp" id="farenheit" value="farenheit">
+        <label for="farenheit">Farenheit</label></p>
+      </form>
+    </div>
+    <div class="container">
+      <div id="status" class="col"></div>
+      <button id="save">Save</button>
+    </div>
+    <script src="assets/js/options.js"></script>
+  </body>
+</html>

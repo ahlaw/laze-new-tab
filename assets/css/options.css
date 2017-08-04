@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  margin: 10px;
+}
+
+.col {
+  width: 50%;
+}
+
+button {
+  margin-left: auto;
+}
+
